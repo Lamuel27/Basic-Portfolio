@@ -1,14 +1,17 @@
 body {font-family: 'Times New Roman', Times, serif;
-    
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 * {box-sizing: border-box;}
 
 header {
     height: 55px;
+    padding: 10px;
 }
 
 h3 {
-        border-bottom: double;
+        border-bottom: 2px solid teal;
         color: teal;
         font-size: 28px;
 }
@@ -43,10 +46,11 @@ input[type=submit]:hover {
     width: 960px;
     position: static;
     padding: 20px;
-    height: 20%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    margin-bottom: 155px;
 }
 
 .Logo {
@@ -57,12 +61,14 @@ input[type=submit]:hover {
     width: 160px;
     bottom: 0;
     top: 20px;
-    /* padding: 35px; */
     float: left;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     font-size: x-large;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Main-Bar {
@@ -79,11 +85,16 @@ input[type=submit]:hover {
 } */
 
 .Footer {
-    height: 20%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 30px;
+    width: 100%;
     text-align: center;
     color: white;
     bottom: 0;
-    padding: 50px;
+    padding: 2px;
+    background-color: #666666;
 }
 
 Section-One {
@@ -101,34 +112,45 @@ a:link {
     background-color: #f2f2f2;
     width: 960px;
     position: static;
-    padding: 20px;
+    padding: 10px;
     height: 20%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    padding-bottom: 40px;
+    margin-bottom: 155px;
+}
 
 img {
     float: left;
+    margin-right: 15px;
 }
 
 /* p {
     margin-left: auto;
 } */
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 100px;
-  }
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    font-family: Arial;
+}
+
+.column img {
+    margin-top: 12px;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
   
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .portfolio {
+  /* .portfolio {
     border-radius: 5px;
     background-color: #f2f2f2;
     width: 960px;
@@ -137,4 +159,18 @@ img {
     height: 20%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 50px; */
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    .Hangman {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
