@@ -80,11 +80,12 @@ input[type=submit]:hover {
 }
 
 .Main-Bar {
-    background-color: white;
+    background-color: #ffffff;
     position: relative;
     text-align: right;
     height: 100px;
     padding: 35px;
+    border: #cccccc;
 }
 
 /* .Webpage {
@@ -99,7 +100,7 @@ input[type=submit]:hover {
     border-left: none;
     border-right: none;
     border-bottom: none;
-    background-color: gray;
+    background-color: #666666;
     width: 100%;
     height: 50px;
     left: 0px;
